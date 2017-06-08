@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Luther</title>
+  <meta name="description" content="Luther. Donate Bitcoin Now.">
+  <meta name="author" content="Franco Arolfo">
+  <link rel="icon" type="image/x-icon" href="icon.png">
+
+  <link rel="stylesheet" href="styles/css/luther.css">
+  <link rel="stylesheet" href="styles/css/input.css">
+  <link rel="stylesheet" href="styles/css/dropdown.css">
+
+
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round|Pacifico|Sacramento|Vibur' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!--<span class="main-left-container">
+    <span class="luther-main-brand">L&nbsp;U&nbsp;T&nbsp;H&nbsp;E&nbsp;R</span>
+    <span class="luther-main-slogan">D&nbsp;O&nbsp;N&nbsp;A&nbsp;T&nbsp;E&nbsp;&nbsp;&nbsp;B&nbsp;I&nbsp;T&nbsp;C&nbsp;O&nbsp;I&nbsp;N&nbsp;&nbsp;&nbsp;T&nbsp;O&nbsp;D&nbsp;A&nbsp;Y</span>
+    <span class="how-it-works-container">
+      <span class="how-it-works-title">How it works?</span>
+      <span class="flow-container">
+        <span class="flow-item search">
+          <i class="fa fa-search flow-icon" aria-hidden="true"></i>
+          <span class="search-text">Find</br>an ONG</span>
+        </span>
+        <span class="flow-arrow">
+          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+        </span>
+        <span class="flow-item scan">
+          <i class="fa fa-qrcode flow-icon" aria-hidden="true"></i>
+          <span class="search-text">Scan the</br>BTC address</span>
+        </span>
+        <span class="flow-arrow">
+          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+        </span>
+        <span class="flow-item search">
+          <i class="fa fa-btc flow-icon" aria-hidden="true"></i>
+          <span class="search-text">Donate</br>yourself</span>
+        </span>
+      </span>
+    </span>
+    <span class="about-container"></span>
+    <span class="footer-container"></span>
+  </span>
+
+  <span class="main-right-container">
+    <span class="ongs-empty">No ONGs found</span>
+    <span class="results-container">
+      <div class="coverflow">
+        <div class="cover">A</div>
+        <div class="cover">B</div>
+        <div class="cover">Y</div>
+        <div class="cover">Z</div>
+      </div>
+    </span>
+  </span>-->
+
+  <span id="mainContainer">
+    <span id="brand">
+      <span class="brand-icon"></span>
+      <span class="main-brand">luther</span>
+      <span class="slogan">D&nbsp;O&nbsp;N&nbsp;A&nbsp;T&nbsp;E&nbsp;&nbsp;&nbsp;B&nbsp;I&nbsp;T&nbsp;C&nbsp;O&nbsp;I&nbsp;N&nbsp;&nbsp;&nbsp;T&nbsp;O&nbsp;D&nbsp;A&nbsp;Y</span>
+    </span>
+    <span id="navigationControls">
+      <span class="navigation-control">Home</span>
+      <span class="navigation-control">About us</span>
+      <span class="navigation-control">Add a new ONG!!</span>
+    </span>
+    <span id="searchControls">
+      <div class="form-container">
+        <form>
+          <div class="input-group">      
+            <input type="text" value="" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>ONGs, charity entites...</label>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">All Categories</button>
+            <div class="dropdown-content">
+              <a href="#">People's Health</a>
+              <a href="#">Animals and Planet Care</a>
+              <a href="#">Computer Science</a>
+              <a href="#">Technology</a>
+              <a href="#">Education</a>
+              <a href="#">Other</a>
+            </div>
+          </div>
+          <button class="button button2">Search</button>
+        </form>
+      </div>
+    </span>
+    <span id="results">
+      <span class="ongs-empty" style="display: none;">No ONGs found</span>
+      <div class="coverflow">
+        <div class="cover">A</div>
+        <div class="cover">B</div>
+        <div class="cover">Y</div>
+        <div class="cover">Z</div>
+                <div class="cover">A</div>
+        <div class="cover">B</div>
+        <div class="cover">Y</div>
+        <div class="cover">Z</div>
+                <div class="cover">A</div>
+        <div class="cover">B</div>
+        <div class="cover">Y</div>
+        <div class="cover">Z</div>
+                <div class="cover">A</div>
+        <div class="cover">B</div>
+        <div class="cover">Y</div>
+        <div class="cover">Z</div>
+      </div>
+    </span>
+    <span id="banner">
+      <div class="marquee">
+        <div>
+          <span>Water for Africa recieved 0.0034BTC (~$300) 4 hours ago</span>
+          <span>Help our children recieved 0.0034BTC (~$300) just a minute ago</span>
+        </div>
+      </div>
+    </span>
+  </span>
+
+
+  <script src="src/app.js"></script>
+  <script src="src/jquery.coverflow.js"></script>
+  <!-- Optionals -->
+  <script src="src/jquery.interpolate.min.js"></script>
+  <script src="src/jquery.touchSwipe.min.js"></script>
+  <script src="src/reflection.js"></script>
+</body>
+</html>
