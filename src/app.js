@@ -49,7 +49,7 @@ $(function() {
         		bitcoinAddressWebsite: 'https://omninano.org/donate-to-stem-education/',
         		slogan: 'We are a non-profit organization teaching students cutting-edge science, specifically nanotechnology.',
         		image: 'omninano.jpg',
-                categories: ['computer-science', 'technology', 'education']
+            categories: ['computer-science', 'technology', 'education']
         	},
         	{
         		name: 'Sean\'s Outpost',
@@ -58,7 +58,7 @@ $(function() {
         		bitcoinAddressWebsite: 'http://www.seansoutpost.com/',
         		slogan: 'Over 167,360 meals fed to the homeless. With Bitcoin.',
         		image: 'seansoutpost.jpg',
-                categories: ['people-health']
+            categories: ['people-health']
         	},
         	{
         		name: 'Songs of Love',
@@ -91,7 +91,7 @@ $(function() {
 
         function populateList(ongs) {
             ongs.forEach(function(ong) {
-                $('.coverflow').append("<div class=\"cover\" style=\"background: url(" + ong.image + ") no-repeat center center; background-size: cover;\"><span class=\"header\">" + ong.name + "</span><span class=\"footer\">" + ong.slogan + "</span></div>");
+                $('.coverflow').append("<div class=\"cover\" style=\"background: url(ong/img/" + ong.image + ") no-repeat center center; background-size: cover;\"><span class=\"header\">" + ong.name + "</span><span class=\"footer\">" + ong.slogan + "</span></div>");
             });
 
             $('.coverflow').coverflow();        
