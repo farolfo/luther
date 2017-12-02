@@ -92,11 +92,11 @@ body {
 }
 
 .slogan {
-    margin-top: -14px;
+    margin-top: -19px;
     display: block;
-    margin-left: 101px;
+    margin-left: 98px;
     font-size: 12px;
-    color: #00BCD4;
+    color: #4CAF50;
 }
 
 .main-brand {
@@ -113,7 +113,7 @@ position: absolute;
     width: 51px;
     top: 65px;
     left: 30px;
-    background: url(../../earth.png) no-repeat center center;
+    background: url(../../asset/earth.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
