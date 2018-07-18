@@ -4,7 +4,7 @@ input 				{
   display:block;
   width:300px;
   border:none;
-  border-bottom:1px solid #63d8ea;
+  border-bottom:1px solid #2196f3;
 }
 * { box-sizing:border-box; }
 input:focus 		{ outline:none; }
@@ -32,7 +32,7 @@ label 				 {
 input:focus ~ label, input:valid ~ label {
   top:-20px;
   font-size:14px;
-  color:#63d8ea;
+  color: #2196f3;
 }
 
 /* BOTTOM BARS ================================= */
@@ -43,7 +43,7 @@ input:focus ~ label, input:valid ~ label {
   width:0;
   bottom:1px; 
   position:absolute;
-  background:#63d8ea; 
+  background: #2196f3;
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
@@ -80,14 +80,14 @@ input:focus ~ .highlight {
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-	from { background:#63d8ea; }
+	from { background: #2196f3; }
   to 	{ width:0; background:transparent; }
 }
 @-moz-keyframes inputHighlighter {
-	from { background:#63d8ea; }
+	from { background: #2196f3; }
   to 	{ width:0; background:transparent; }
 }
 @keyframes inputHighlighter {
-	from { background:#63d8ea; }
+	from { background:#2196f3; }
   to 	{ width:0; background:transparent; }
 }

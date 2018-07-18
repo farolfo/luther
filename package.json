@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Donate Bitcoin.",
   "scripts": {
-    "deploy": "grunt serve"
+    "serve": "grunt serve"
   },
   "repository": {
     "type": "git",

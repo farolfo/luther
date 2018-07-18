@@ -157,8 +157,9 @@ $(function() {
         function populateList(ongs) {
             ongs.forEach(function(ong) {
                 $('.coverflow').append("" +
-                "<div class=\"cover\" style=\"background: url(ong/img/" + ong.image + ") no-repeat center center; background-size: cover;\">" +
+                "<div class=\"cover\">" +
                   "<span class=\"header\">" + ong.name + buildVerifiedIcon(ong) + "</span>" +
+                  "<span class=\"image\" style=\"background: url(ong/img/" + ong.image + ") no-repeat center center; background-size: cover;\"></span>" +
                   "<span class=\"footer\">" + ong.slogan + "</span>" +
                 "</div>");
             });
