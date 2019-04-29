@@ -5,7 +5,7 @@
   <title>Luther</title>
   <meta name="description" content="Luther. Donate Bitcoin Now.">
   <meta name="author" content="Franco Arolfo">
-  <link rel="icon" type="image/x-icon" href="asset/earth%20copy.png">
+  <link rel="icon" type="image/x-icon" href="asset/icon2.png">
 
   <link rel="stylesheet" href="style/css/luther.css">
   <link rel="stylesheet" href="style/css/input.css">
@@ -13,13 +13,14 @@
 
 
   <link href='https://fonts.googleapis.com/css?family=Varela+Round|Pacifico|Sacramento|Vibur' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.js"></script>
 
   <script src="src/app.js"></script>
+  <script src="ngo/ngo.js"></script>
   <script src="src/lib/jquery.coverflow.js"></script>
   <!-- Optionals -->
   <script src="src/lib/jquery.interpolate.min.js"></script>
@@ -41,7 +42,7 @@
     <span id="navigationControls">
       <span class="navigation-control">Home</span>
       <span class="navigation-control">About us</span>
-      <span class="navigation-control">Submit ONG</span>
+      <span class="navigation-control">Submit NGO</span>
     </span>
     <span id="searchControls">
       <div class="form-container">
@@ -50,7 +51,7 @@
             <input type="text" id="search-text" value="" min="1" max="9999">
             <span class="highlight"></span>
             <span class="bar"></span>
-            <label>ONGs, charity entites...</label>
+            <label>NGOs, charity entites...</label>
           </div>
           <div class="dropdown">
             <button class="dropbtn" id="category">All Categories</button>
@@ -69,7 +70,7 @@
       </div>
     </span>
     <span id="results">
-      <span class="ongs-empty" style="display: none;">No ONGs found</span>
+      <span class="ongs-empty" style="display: none;">No NGOs found</span>
       <div class="coverflow"></div>
     </span>
     <span id="banner">

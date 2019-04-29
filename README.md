@@ -1,10 +1,9 @@
-# Luther - Donate Bitcoin
+# Luther - Donate Bitcoin Now
 
-Luther is an open source non-profit project that looks for helping people donating BTC to verified charity entities and NGOs (Non Gubernamental Organizations).
+Luther is an open source non-profit project that looks for helping people donating money to verified charity entities and NGOs (Non Gubernamental Organizations) through Bitcoin.
 
-Luther provides the BTC addresses of these organizations, with the link of their site in case the user wants to validate the address.
+Luther provides the BTC addresses of these organizations, with the link of their site in case the user wants to validate the address (which we always ENCOURAGE).
 
-The verification process of the NGOs is made via Instagram, Twitter or Facebook, similar of how Spotify verifies their artists accounts.
 
 ### Compile
 

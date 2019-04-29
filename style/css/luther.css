@@ -189,7 +189,7 @@ body {
     background-color: white;
     color: black;
     padding-top: 17px;
-    padding-left: 14px;
+    padding-left: 20px;
     font-size: 22px;
 }
 
@@ -199,22 +199,23 @@ body {
     right: 0;
     left: 0;
     bottom: 0px;
-    height: 90px;
+    height: 150px;
     color: black;
     background-color: white;
-    text-align: center;
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: small;
+    text-align: justify;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: lighter;
+    font-size: 12px;
 }
 
-i.fa.verified {
+i.fas.verified {
     position: absolute;
-    top: 16px;
+    top: 19px;
     right: 19px;
     color: #4CAF50;
-    font-size: 30px;
+    font-size: 23px;
 }
 
 .image {
@@ -222,4 +223,8 @@ i.fa.verified {
     height: 185px;
     margin: auto;
     display: block;
+}
+
+.coverflow {
+    outline: none;
 }
