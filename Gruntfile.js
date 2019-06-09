@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     less: {
       dist: {
         files: {
-          'dist/css/style.min.css': [
+          'style/css/style.min.css': [
             'style/less/*.less'
           ]
         },
@@ -15,13 +15,13 @@ module.exports = function (grunt) {
           // LESS source map
           // To enable, set sourceMap to true and update sourceMapRootpath based on your install
           sourceMap: false,
-          sourceMapFilename: 'dist/css/style.min.css',
+          sourceMapFilename: 'style/css/style.min.css',
           sourceMapRootpath: '/'
         }
       },
       dev: {
         files: {
-          'dist/css/style.min.css': [
+          'style/css/style.min.css': [
             'style/less/*.less'
           ]
         },
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
           // LESS source map
           // To enable, set sourceMap to true and update sourceMapRootpath based on your install
           sourceMap: true,
-          sourceMapFilename: 'dist/css/style.min.css',
+          sourceMapFilename: 'style/css/style.min.css',
           sourceMapRootpath: '/'
         }
       }
@@ -47,7 +47,7 @@ module.exports = function (grunt) {
         tasks: []
       },
       css: {
-        files: ['**/*.css'],
+        files: ['style/css/style.min.css'],
         tasks: []
       },
       js: {
@@ -64,15 +64,15 @@ module.exports = function (grunt) {
           livereload: true
         },
         files: [
-          'dist/*'
+        //  'dist/*'
         ]
       }
     },
     clean: {
       dist: [
-        //'src/styles/styles.min.css',
-        //'src/styles/styles.min.css.map',
-        'dist/*'
+        'style/css/style.min.css',
+        'style/css/style.min.css.map',
+        //'dist/*'
       ]
     },
     connect: {
