@@ -7,9 +7,7 @@
   <meta name="author" content="Franco Arolfo">
   <link rel="icon" type="image/x-icon" href="asset/icon2.png">
 
-  <link rel="stylesheet" href="style/css/luther.css">
-  <link rel="stylesheet" href="style/css/input.css">
-  <link rel="stylesheet" href="style/css/dropdown.css">
+  <link rel="stylesheet" href="dist/css/style.min.css">
 
 
   <link href='https://fonts.googleapis.com/css?family=Varela+Round|Pacifico|Sacramento|Vibur' rel='stylesheet' type='text/css'>
@@ -34,17 +32,28 @@
 
 <body>
 
-  <span id="mainContainer">
-    <span id="brand">
-      <span class="main-brand">luther</span>
-      <span class="slogan">D&nbsp;O&nbsp;N&nbsp;A&nbsp;T&nbsp;E&nbsp;&nbsp;&nbsp;B&nbsp;I&nbsp;T&nbsp;C&nbsp;O&nbsp;I&nbsp;N</span>
-    </span>
-    <span id="navigationControls">
-      <span class="navigation-control">Home</span>
-      <span class="navigation-control">About us</span>
-      <span class="navigation-control">Submit NGO</span>
-    </span>
-    <span id="searchControls">
+  <span id="mainScreen">
+    <!-- Banner (v2)
+
+    <span id="banner" class="vertical-section">
+      <div class="marquee">
+        <div>
+          <span>Water for Africa recieved 0.0034BTC (~$300) 4 hours ago</span>
+          <span>Help our children recieved 0.0034BTC (~$300) just a minute ago</span>
+        </div>
+      </div>
+    </span> -->
+    <span class="vertical-section video-covered">
+      <span id="brand">
+        <span class="main-brand">luther</span>
+        <span class="slogan">D&nbsp;O&nbsp;N&nbsp;A&nbsp;T&nbsp;E&nbsp;&nbsp;&nbsp;B&nbsp;I&nbsp;T&nbsp;C&nbsp;O&nbsp;I&nbsp;N</span>
+      </span>
+      <span id="navigationControls">
+        <span class="navigation-control">Home</span>
+        <span class="navigation-control">About us</span>
+        <span class="navigation-control">Submit NGO</span>
+      </span>
+      <span id="searchControls">
       <div class="form-container">
         <form>
           <div class="input-group">      
@@ -69,18 +78,12 @@
         </form>
       </div>
     </span>
-    <span id="results">
+    </span>
+    <span id="results" class="vertical-section">
       <span class="ongs-empty" style="display: none;">No NGOs found</span>
       <div class="coverflow"></div>
     </span>
-    <span id="banner">
-      <div class="marquee">
-        <div>
-          <span>Water for Africa recieved 0.0034BTC (~$300) 4 hours ago</span>
-          <span>Help our children recieved 0.0034BTC (~$300) just a minute ago</span>
-        </div>
-      </div>
-    </span>
+    <span id="disclaimer" class="vertical-section"></span>
   </span>
 </body>
 </html>
