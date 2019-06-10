@@ -165,6 +165,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  min-width: 1177px;
 }
 .vertical-section {
   display: block;
@@ -232,8 +233,8 @@ body {
 #brand {
   display: inline-block;
   height: 160px;
-  width: 400px;
   position: relative;
+  text-shadow: 0px 1px 0px #b9b9b9;
 }
 #navigationControls {
   height: 93px;
@@ -262,17 +263,18 @@ body {
 }
 .slogan {
   margin-top: -19px;
-  display: block;
-  margin-left: 98px;
-  font-size: 12px;
-  color: #4CAF50;
+  display: inline-block;
+  margin-left: 21px;
+  font-size: 70px;
+  color: #0091b5;
+  font-family: 'Sacramento', cursive;
 }
 .main-brand {
   margin-top: 50px;
-  display: block;
+  display: inline-block;
   margin-left: 98px;
   font-family: 'Sacramento', cursive;
-  font-size: 50px;
+  font-size: 90px;
 }
 .brand-icon {
   position: absolute;
