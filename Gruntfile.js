@@ -2,7 +2,20 @@
 
 module.exports = function (grunt) {
 
+  require("load-grunt-tasks")(grunt);
+
   grunt.initConfig({
+    babel: {
+      options: {
+        sourceMap: true,
+        presets: ['@babel/preset-env']
+      },
+      dist: {
+        files: {
+          'dist/app.js': 'src/app.js'
+        }
+      }
+    },
     less: {
       dist: {
         files: {
@@ -95,7 +108,8 @@ module.exports = function (grunt) {
   // Register tasks
   grunt.registerTask('default', [
     'clean',
-    'less:dist'
+    'less:dist',
+    'babel'
   ]);
 
   grunt.registerTask('serve', [

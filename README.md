@@ -9,6 +9,13 @@ Luther provides the BTC addresses of these organizations, with the link of their
 
 Luther's base code is tested under node ```v6.11.13```. If you don't have node installed yet, doing it via ```[nvm](https://github.com/creationix/nvm)``` is highly recommended.
 
+You MUST have already installed localy ```grunt``` and ```babel```.
+
+```
+npm install grunt-cli
+npm install babel-cli@6 babel-preset-react-app@3
+```
+
 Then, run
 
 ```
