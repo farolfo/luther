@@ -6,6 +6,20 @@ $(function() {
     populateList(ngos);
 });
 
+var Contact = React.createClass({
+  render: function() {
+    return (
+      <li className="contact">
+        <img src={this.props.image} width="60px" height="60px" className="contact-image"/>
+        <div className="contact-info">
+          <div className="contact-name">{this.props.name}</div>
+          <div className="contact-number">{this.props.phoneNumber}</div>
+        </div>
+      </li>
+    );
+  }
+});
+
 function init(ngos) {
 
     var searchSettings = {

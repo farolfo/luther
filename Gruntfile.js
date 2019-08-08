@@ -7,7 +7,8 @@ module.exports = function (grunt) {
   grunt.initConfig({
     babel: {
       options: {
-        sourceMap: true
+          sourceMap: false,
+          presets: ["@babel/preset-env", "@babel/react"]
       },
       dist: {
         files: {

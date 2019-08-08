@@ -13,7 +13,7 @@ You MUST have already installed localy ```grunt``` and ```babel```.
 
 ```
 npm install grunt-cli
-npm install babel-cli@6 babel-preset-react-app@3
+npm install --save-dev grunt-babel babel-cli
 ```
 
 Then, run

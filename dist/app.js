@@ -5,6 +5,25 @@ $(function () {
   init(ngos);
   populateList(ngos);
 });
+var Contact = React.createClass({
+  displayName: "Contact",
+  render: function render() {
+    return React.createElement("li", {
+      className: "contact"
+    }, React.createElement("img", {
+      src: this.props.image,
+      width: "60px",
+      height: "60px",
+      className: "contact-image"
+    }), React.createElement("div", {
+      className: "contact-info"
+    }, React.createElement("div", {
+      className: "contact-name"
+    }, this.props.name), React.createElement("div", {
+      className: "contact-number"
+    }, this.props.phoneNumber)));
+  }
+});
 
 function init(ngos) {
   var searchSettings = {
@@ -76,4 +95,3 @@ function filterBySearch(ngos, searchSettings) {
 //    </div>
 //  );
 //}
-//# sourceMappingURL=app.js.map
