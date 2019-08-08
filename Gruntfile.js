@@ -66,8 +66,7 @@ module.exports = function (grunt) {
       js: {
         files: [
           'src/**/*.js',
-          'ong/*.js',
-          'dist/**/*.js'
+          'ong/*.js'
         ],
         tasks: ['babel']
       },
