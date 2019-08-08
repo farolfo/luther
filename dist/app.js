@@ -66,5 +66,14 @@ function filterBySearch(ngos, searchSettings) {
   return _.filter(ngos, function (item) {
     return containsText(item, searchSettings.text.toLowerCase()) || fitsCategory(item, searchSettings.category);
   });
-}
+} //function UserInfo(props) {
+//  return (
+//    <div className="UserInfo">
+//      <Avatar user={props.user} />
+//      <div className="UserInfo-name">
+//        {props.user.name}
+//      </div>
+//    </div>
+//  );
+//}
 //# sourceMappingURL=app.js.map

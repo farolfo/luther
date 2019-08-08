@@ -7,8 +7,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     babel: {
       options: {
-        sourceMap: true,
-        presets: ['@babel/preset-env']
+        sourceMap: true
       },
       dist: {
         files: {
@@ -66,9 +65,10 @@ module.exports = function (grunt) {
       js: {
         files: [
           'src/**/*.js',
-          'ong/*.js'
+          'ong/*.js',
+          'dist/**/*.js'
         ],
-        tasks: []
+        tasks: ['babel']
       },
       livereload: {
         // Browser live reloading
@@ -85,7 +85,7 @@ module.exports = function (grunt) {
       dist: [
         'style/css/style.min.css',
         'style/css/style.min.css.map',
-        //'dist/*'
+        'dist/*'
       ]
     },
     connect: {
