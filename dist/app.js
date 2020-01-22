@@ -24,18 +24,18 @@ $(function () {
   populateList(ngos);
 });
 
-var MyComponent =
+var ONG =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(MyComponent, _React$Component);
+  _inherits(ONG, _React$Component);
 
-  function MyComponent() {
-    _classCallCheck(this, MyComponent);
+  function ONG() {
+    _classCallCheck(this, ONG);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(MyComponent).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(ONG).apply(this, arguments));
   }
 
-  _createClass(MyComponent, [{
+  _createClass(ONG, [{
     key: "render",
     value: function render() {
       return React.createElement("li", {
@@ -55,7 +55,7 @@ function (_React$Component) {
     }
   }]);
 
-  return MyComponent;
+  return ONG;
 }(React.Component);
 
 function init(ngos) {
@@ -78,13 +78,12 @@ function init(ngos) {
 
 function populateList(ngos) {
   ngos.forEach(function (ngo) {
-    $('.coverflow').append("" + "<div id=\"ngoId" + ngo.id + "\" class=\"cover\">" + "<span class=\"header\">" + ngo.name + buildVerifiedIcon(ngo) + "</span>" + "<span class=\"image\" style=\"background: url(ngo/img/" + ngo.image + ") no-repeat center center; background-size: cover;\"></span>" + "<span class=\"footer\">" + ngo.slogan + "</span>" + "</div>");
-  });
-  $('.coverflow').coverflow();
+    $('.results-grid').append("" + "<div id=\"ngoId" + ngo.id + "\" class=\"cover\">" + "<span class=\"header\">" + ngo.name + buildVerifiedIcon(ngo) + "</span>" + "<span class=\"image\" style=\"background: url(ngo/img/" + ngo.image + ") no-repeat center center; background-size: cover;\"></span>" + "<span class=\"footer\">" + ngo.slogan + "</span>" + "</div>");
+  }); //    $('.coverflow').coverflow();
 }
 
 function clearList() {
-  $('.coverflow').html('');
+  $('.results-grid').html('');
 }
 
 function fitsCategory(item, category) {

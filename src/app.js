@@ -6,7 +6,7 @@ $(function() {
     populateList(ngos);
 });
 
-class MyComponent extends React.Component {
+class ONG extends React.Component {
   render() {
       return <li className="contact">
         <img src={this.props.image} width="60px" height="60px" className="contact-image"/>
@@ -39,7 +39,7 @@ function init(ngos) {
 
 function populateList(ngos) {
     ngos.forEach(function(ngo) {
-        $('.coverflow').append("" +
+        $('.results-grid').append("" +
         "<div id=\"ngoId" + ngo.id + "\" class=\"cover\">" +
           "<span class=\"header\">" + ngo.name + buildVerifiedIcon(ngo) + "</span>" +
           "<span class=\"image\" style=\"background: url(ngo/img/" + ngo.image + ") no-repeat center center; background-size: cover;\"></span>" +
@@ -47,11 +47,11 @@ function populateList(ngos) {
         "</div>");
     });
 
-    $('.coverflow').coverflow();
+//    $('.coverflow').coverflow();
 }
 
 function clearList() {
-    $('.coverflow').html('');
+    $('.results-grid').html('');
 }
 
 function fitsCategory(item, category) {
