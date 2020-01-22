@@ -7,7 +7,7 @@ Luther provides the BTC addresses of these organizations, with the link of their
 
 ### Compile
 
-Luther's base code is tested under node ```v6.11.13```. If you don't have node installed yet, do it via ```[nvm](https://github.com/creationix/nvm)```.
+Luther's base code is tested under node ```v6.11.13```. If you don't have node installed yet, do it via [nvm](https://github.com/creationix/nvm).
 
 You MUST have already installed local  ```grunt``` and ```babel``` scripts.
 
